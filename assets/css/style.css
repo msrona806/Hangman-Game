@@ -1,0 +1,8 @@
+body {
+    background: #ff9;
+}
+
+.box {
+    border: 2px dotted #f6a;
+    height: 400px;
+}

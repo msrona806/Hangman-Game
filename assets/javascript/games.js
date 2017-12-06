@@ -1,27 +1,35 @@
-<script type="text/javascript">
+//VARIABLES
+// empty array to show letters guessed
+var letter = [];
+var lettersGuessed = [];
 
+
+// DOM ELEMENTS
 // variable to reference the span
 var userGuess = document.getElementById("userGuess");
 
+// FUNCTION
 // function to execute for onkeyup event 
 document.onkeyup = function(event) {
-        userGuess.textContent = event.key;
+    var keyPressed = event.key;
+    lettersGuessed.push(keyPressed);
+    console.log(lettersGuessed);
+    userGuess.textContent = lettersGuessed;
+
 };
 
-// empty array to show letters guessed
-var letter = [];
-var lettersGuessed;
+// EVENT LISTENERS
 
-// loop letters to the empty array
-for (var g = 0; g < lettersGuessed.length; g++) {    lettersGuessed.push(letter);
-}
 
-// variable html to keep track of letters guessed
-var html = 
-    "<p>Letters already guessed: " + userGuess + "</p>";
 
-document.queryselector("#game").innerHTML = html;
+// Get a word to play
+// figure how long that word is
+// show _ for every letter of array
+// listen for key presses
+// check if key press corresponds to a letter in the word 
 
+
+// EXAMPLE
 var emptyString = "";
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
 
@@ -31,4 +39,3 @@ while (emptyString.length < 6) {
 console.log(emptyString);
 
 
-</script>  
