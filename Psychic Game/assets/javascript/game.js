@@ -3,7 +3,7 @@ var lettersGuessed = [];
 var possible = ["a","b","d","e","g","h","i","j","k","l","m","n","o","p","q",
 "r","s","t","u","w","x","y"]
 var wins = 0;
-console.log(wins);
+
 var losses = 0;
 var guessesLeft = 8;
 var gameOver = false;
@@ -27,7 +27,7 @@ var userGuess = document.getElementById("Guess");
     console.log(lettersGuessed);
 
     Guess.textContent = lettersGuessed;
-    
+    var userWins = document.getElementById("wins");
 
     //if statements:
     if (userGuess === computerGuess) {
